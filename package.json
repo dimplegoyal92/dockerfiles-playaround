@@ -1,0 +1,20 @@
+{
+  "name": "dockerfile-examples",
+  "version": "1.0.0",
+  "description": "some of the dockerfile examples",
+  "main": "index.js",
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimplegoyal92/dockerfile-playaround.git"
+  },
+  "author": "dimple",
+  "license": "ISC",
+  "homepage": "https://github.com/dimplegoyal92/dockerfile-playaround#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

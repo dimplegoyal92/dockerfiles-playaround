@@ -1,0 +1,14 @@
+# from base image node
+FROM node:16-slim
+
+ENV workdirectory /usr/node
+
+WORKDIR $workdirectory
+WORKDIR app
+
+COPY package.json .
+
+RUN ls
+
+# command executable and version
+ENTRYPOINT ["node"]

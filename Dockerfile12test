@@ -1,0 +1,27 @@
+# from base image node
+ARG NODE_VERSION=16-slim
+FROM node:$NODE_VERSION
+
+LABEL "about"="This file is just am example to demonstarte the LABEL"
+
+ENV workdirectory /home/dimple
+
+WORKDIR $workdirectory
+WORKDIR app
+
+COPY package.json .
+
+RUN ls &&\
+    npm install
+
+RUN useradd dimple
+USER dimple
+
+ADD app.js .
+
+RUN ls 
+
+EXPOSE 3000
+
+# command executable and version
+ENTRYPOINT ["node"]

@@ -1,0 +1,6 @@
+# from base image node
+FROM node:16-slim
+
+# command executable and version
+CMD ["node","-v"]
+CMD ["node"]
